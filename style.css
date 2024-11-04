@@ -48,9 +48,18 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+/* style.css */
+
 /* Contact Box */
 .contact-box {
+    background-color: #f8f9fa; /* Light grey background */
+    max-width: 600px;          /* Makes the box narrower */
     margin-top: 20px;
+}
+
+/* Adjust card body padding if needed */
+.contact-box .card-body {
+    padding: 20px;
 }
 
 /* Ensure sections have sufficient spacing */
@@ -72,7 +81,7 @@ html {
 
 /* style.css */
 
-/* Adjust the publication images to maintain aspect ratio */
+/* Adjust the publication images to maintain aspect ratio
 .card-img-top {
     object-fit: cover;
     height: 200px;
@@ -82,4 +91,18 @@ html {
 .card-body {
     height: 200px;
     overflow: hidden;
+} */
+
+/* style.css */
+
+/* Adjust publication card image height */
+.card-img {
+    height: 100%;
+    object-fit: cover;
 }
+
+/* Optional: Adjust the card height */
+.card {
+    height: 200px; /* Adjust as needed */
+}
+
