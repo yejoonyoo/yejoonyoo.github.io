@@ -3,23 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Name - Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Optional Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Viewport Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="fun.html">Fun</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Your Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fun.html">Fun</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Content -->
-    <div class="content">
-        <h1>About Me</h1>
-        <p>Welcome to my academic website! Here is a brief description about me.</p>
+    <div class="container mt-4">
+        <!-- Profile Section -->
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="your_profile_image.jpg" alt="Your Name" class="img-fluid rounded-circle profile-image">
+            </div>
+            <div class="col-md-8">
+                <h1>Your Name</h1>
+                <p>Welcome to my academic website! Here is a brief description about me.</p>
+                <!-- Contact Information Box -->
+                <div class="card contact-box">
+                    <div class="card-body">
+                        <h2 class="card-title">Contact Information</h2>
+                        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                        <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+                        <p>CV: <a href="your_cv.pdf" target="_blank">Download CV</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"           integrity="sha384-DfXd3X68a1e0cM7NFnrmaMBEJ6p9dRRgRygYb4uPrHLhgslx44FlXEAy0gLq5Io7" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"           integrity="sha384-9/reFTGAW83EW2RDuOLcZOPSwuDoftV1uMg9F6Dzx5R0KX6Kk8aRhoRzgE/viMYgQ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"           integrity="sha384-B4gt1jrGC7Jh4Ag4b2WTeFSRK5gF1Knri59HeO/+cJQkSUJGHAzWwbw4ZPZ6UpJ0D" crossorigin="anonymous"></script>
 </body>
 </html>

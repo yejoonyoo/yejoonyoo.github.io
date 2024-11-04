@@ -35,3 +35,18 @@ nav a:hover {
 .content {
     padding: 20px;
 }
+
+/* style.css */
+
+/* Adjust profile image size */
+.profile-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Optional: Center align text on smaller screens */
+@media (max-width: 768px) {
+    .col-md-8 {
+        text-align: center;
+    }
+}
