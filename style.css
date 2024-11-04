@@ -38,15 +38,34 @@ nav a:hover {
 
 /* style.css */
 
+/* style.css */
+
+/* Existing styles... */
+
 /* Adjust profile image size */
 .profile-image {
     max-width: 200px;
     margin-bottom: 20px;
 }
 
-/* Optional: Center align text on smaller screens */
-@media (max-width: 768px) {
-    .col-md-8 {
-        text-align: center;
-    }
+/* Contact Box */
+.contact-box {
+    margin-top: 20px;
+}
+
+/* Ensure sections have sufficient spacing */
+section {
+    padding-top: 70px; /* Height of the navbar */
+}
+
+/* Adjust the scroll behavior if not using the smooth scrolling script */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Optional: Active link styling */
+.navbar-nav .nav-item .nav-link.active {
+    color: #f8f9fa;
+    background-color: #495057;
+    border-radius: 5px;
 }

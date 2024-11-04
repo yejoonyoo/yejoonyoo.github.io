@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Home</title>
+    <title>Your Name - Academic Website</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Optional Custom CSS -->
@@ -12,55 +12,153 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Your Name</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="publications.html">Publications</a>
+                    <a class="nav-link" href="#publications">Publications</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cv.html">CV</a>
+                    <a class="nav-link" href="#cv">CV</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="fun.html">Fun</a>
+                    <a class="nav-link" href="#fun">Fun</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Content -->
-    <div class="container mt-4">
-        <!-- Profile Section -->
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="your_profile_image.jpg" alt="Your Name" class="img-fluid rounded-circle profile-image">
-            </div>
-            <div class="col-md-8">
-                <h1>Your Name</h1>
-                <p>Welcome to my academic website! Here is a brief description about me.</p>
-                <!-- Contact Information Box -->
-                <div class="card contact-box">
-                    <div class="card-body">
-                        <h2 class="card-title">Contact Information</h2>
-                        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                        <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
-                        <p>CV: <a href="your_cv.pdf" target="_blank">Download CV</a></p>
+    <!-- Home Section -->
+    <section id="home" class="pt-5">
+        <div class="container mt-5">
+            <!-- Profile Section -->
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="your_profile_image.jpg" alt="Your Name" class="img-fluid rounded-circle profile-image">
+                </div>
+                <div class="col-md-8">
+                    <h1>Your Name</h1>
+                    <p>Welcome to my academic website! Here is a brief description about me.</p>
+                    <!-- Contact Information Box -->
+                    <div class="card contact-box">
+                        <div class="card-body">
+                            <h2 class="card-title">Contact Information</h2>
+                            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                            <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+                            <p>CV: <a href="#cv">View CV</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="pt-5">
+        <div class="container mt-5">
+            <h1>Publications</h1>
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h5 class="mb-1">Publication Title 1</h5>
+                    <p class="mb-1">Brief description of publication 1.</p>
+                </div>
+                <div class="list-group-item">
+                    <h5 class="mb-1">Publication Title 2</h5>
+                    <p class="mb-1">Brief description of publication 2.</p>
+                </div>
+                <!-- Add more publications as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="pt-5">
+        <div class="container mt-5">
+            <h1>Curriculum Vitae</h1>
+            <p>You can view or download my CV below:</p>
+            <a href="your_cv.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+            <!-- Optional: Embed your CV directly -->
+            <!--
+            <object data="your_cv.pdf" type="application/pdf" width="100%" height="600px">
+                <p>Your browser does not support PDFs. Please download the PDF to view it: <a href="your_cv.pdf">Download PDF</a>.</p>
+            </object>
+            -->
+        </div>
+    </section>
+
+    <!-- Fun Section -->
+    <section id="fun" class="pt-5">
+        <div class="container mt-5">
+            <h1>Fun</h1>
+            <p>Here are some of my hobbies and interests!</p>
+            <!-- Hobbies Section -->
+            <div class="row">
+                <!-- Hobby 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="hobby1.jpg" class="card-img-top" alt="Hobby 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Hobby 1</h5>
+                            <p class="card-text">Description of hobby 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hobby 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="hobby2.jpg" class="card-img-top" alt="Hobby 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Hobby 2</h5>
+                            <p class="card-text">Description of hobby 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hobby 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="hobby3.jpg" class="card-img-top" alt="Hobby 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Hobby 3</h5>
+                            <p class="card-text">Description of hobby 3.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more hobbies as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Optional) -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
 
     <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"           integrity="sha384-DfXd3X68a1e0cM7NFnrmaMBEJ6p9dRRgRygYb4uPrHLhgslx44FlXEAy0gLq5Io7" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"           integrity="sha384-9/reFTGAW83EW2RDuOLcZOPSwuDoftV1uMg9F6Dzx5R0KX6Kk8aRhoRzgE/viMYgQ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"           integrity="sha384-B4gt1jrGC7Jh4Ag4b2WTeFSRK5gF1Knri59HeO/+cJQkSUJGHAzWwbw4ZPZ6UpJ0D" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"       integrity="sha384-DfXd3X68a1e0cM7NFnrmaMBEJ6p9dRRgRygYb4uPrHLhgslx44FlXEAy0gLq5Io7" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"       integrity="sha384-9/reFTGAW83EW2RDuOLcZOPSwuDoftV1uMg9F6Dzx5R0KX6Kk8aRhoRzgE/viMYgQ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"       integrity="sha384-B4gt1jrGC7Jh4Ag4b2WTeFSRK5gF1Knri59HeO/+cJQkSUJGHAzWwbw4ZPZ6UpJ0D" crossorigin="anonymous"></script>
+
+    <!-- Smooth Scrolling Script (Optional) -->
+    <script>
+        // Optional: Smooth scrolling for internal links
+        $(document).ready(function(){
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 70
+                    }, 800);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
