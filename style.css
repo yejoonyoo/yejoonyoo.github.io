@@ -69,3 +69,17 @@ html {
     background-color: #495057;
     border-radius: 5px;
 }
+
+/* style.css */
+
+/* Adjust the publication images to maintain aspect ratio */
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Optional: Set a fixed height for card bodies to align cards */
+.card-body {
+    height: 200px;
+    overflow: hidden;
+}
