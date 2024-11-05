@@ -79,30 +79,37 @@ html {
     border-radius: 5px;
 }
 
-/* style.css */
-
-/* Adjust the publication images to maintain aspect ratio
-.card-img-top {
-    object-fit: cover;
-    height: 200px;
+/* Adjust publication card width */
+.publication-card {
+    max-width: 100%; /* Allows the card to take up the full width of its container */
 }
 
-/* Optional: Set a fixed height for card bodies to align cards */
-.card-body {
-    height: 200px;
-    overflow: hidden;
-} */
-
-/* style.css */
-
-/* Adjust publication card image height */
+/* Adjust card image */
 .card-img {
     height: 100%;
     object-fit: cover;
 }
 
 /* Optional: Adjust the card height */
-.card {
-    height: 200px; /* Adjust as needed */
+.publication-card .row {
+    height: 200px; /* Adjust as needed for consistent card heights */
 }
 
+@media (max-width: 768px) {
+    /* On smaller screens, stack the image and text vertically */
+    .publication-card .row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .publication-card .col-md-4,
+    .publication-card .col-md-8 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .card-img {
+        width: 100%;
+        height: auto;
+    }
+}
