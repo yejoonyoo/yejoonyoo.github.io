@@ -36,31 +36,32 @@ nav a:hover {
     padding: 20px;
 }
 
-/* style.css */
-
-/* style.css */
-
-/* Existing styles... */
-
-/* Adjust profile image size */
 .profile-image {
-    max-width: 200px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
 }
-
-/* style.css */
-
 /* Contact Box */
 .contact-box {
     background-color: #f8f9fa; /* Light grey background */
-    max-width: 600px;          /* Makes the box narrower */
     margin-top: 20px;
 }
 
-/* Adjust card body padding if needed */
-.contact-box .card-body {
-    padding: 20px;
+/* Remove margin and padding from the image and contact box */
+.col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
 }
+
+/* Optional: Add borders or styling to match the image and contact box */
+.profile-image, .contact-box {
+    border: 1px solid #ddd;
+}
+
+/* Remove border radius to keep image square */
+.profile-image {
+    border-radius: 0;
+}
+
 
 /* Ensure sections have sufficient spacing */
 section {
