@@ -1,11 +1,11 @@
-/* style.css */
-
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Navigation Bar */
 nav {
     background-color: #333;
 }
@@ -32,57 +32,63 @@ nav a:hover {
     background-color: #111;
 }
 
-.content {
-    padding: 20px;
+/* Content Wrapper for Consistent Width */
+.content-wrapper, .container {
+    max-width: 800px; /* Adjust this for desired width */
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+/* Profile Image */
 .profile-image {
-    width: 100%;
+    width: 100%; /* Keeps the image responsive */
+    max-width: 300px; /* Sets a maximum width */
     height: auto;
+    border-radius: 0; /* Keeps the image square */
+    display: block;
+    margin: 0 auto; /* Centers the image within its container */
 }
+
+
 /* Contact Box */
 .contact-box {
     background-color: #f8f9fa; /* Light grey background */
     margin-top: 20px;
+    border: 1px solid #ddd; /* Matches the image border */
 }
 
-/* Remove margin and padding from the image and contact box */
-.col-md-4 {
-    padding-left: 0;
-    padding-right: 0;
+.contact-box .card-body {
+    padding: 15px;
 }
 
-/* Optional: Add borders or styling to match the image and contact box */
-.profile-image, .contact-box {
-    border: 1px solid #ddd;
+/* Remove margin and padding from the image and contact box columns */
+.col-md-4, .col-md-8 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
-/* Remove border radius to keep image square */
-.profile-image {
-    border-radius: 0;
-}
-
 
 /* Ensure sections have sufficient spacing */
 section {
     padding-top: 70px; /* Height of the navbar */
 }
 
-/* Adjust the scroll behavior if not using the smooth scrolling script */
+/* Adjust the scroll behavior */
 html {
     scroll-behavior: smooth;
 }
 
-/* Optional: Active link styling */
+/* Active Link Styling */
 .navbar-nav .nav-item .nav-link.active {
     color: #f8f9fa;
     background-color: #495057;
     border-radius: 5px;
 }
 
-/* Adjust publication card width */
+/* Publication Card */
 .publication-card {
     max-width: 100%; /* Allows the card to take up the full width of its container */
+    margin-bottom: 20px;
 }
 
 /* Adjust card image */
@@ -91,11 +97,25 @@ html {
     object-fit: cover;
 }
 
-/* Optional: Adjust the card height */
+/* Adjust publication card row */
 .publication-card .row {
     height: 200px; /* Adjust as needed for consistent card heights */
 }
 
+/* Ensure images fit within their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Limit width of the description text container */
+.description-container {
+    max-width: 500px; /* Set your preferred max width */
+    margin: 0 auto; /* Centers the content within its container */
+}
+
+
+/* Responsive Adjustments for Publication Cards */
 @media (max-width: 768px) {
     /* On smaller screens, stack the image and text vertically */
     .publication-card .row {
@@ -112,5 +132,15 @@ html {
     .card-img {
         width: 100%;
         height: auto;
+    }
+}
+
+/* Additional Responsive Adjustments */
+@media (max-width: 768px) {
+    .col-md-4, .col-md-8 {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
