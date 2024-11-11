@@ -65,26 +65,21 @@ nav a:hover {
     margin-bottom: 10px; /* Space between the image and contact box */
 }
 
+/* Contact Box */
 .contact-box {
-    width: 100%; /* Set a fixed width for consistent sizing */
-    padding: 0; /* Add padding for visual spacing */
-    background-color: #f8f9fa; /* Background color */
-    border: 1px solid #ddd; /* Border for styling */
-    text-align: left; /* Align text to the left */
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    height: 70px;
+    width: 100%;
+    max-width: 300px; /* Align width with the profile image */
+    text-align: left; /* Center text inside the box */
+    color: #333;
 }
 
 .contact-box a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    margin-bottom: 5px; /* Optional spacing between links */
+    color: #333 !important; /* Override default link color */
+    text-decoration: none; /* Remove underline if desired */
 }
-
-.contact-box a i {
-    margin-right: 8px; /* Space between icon and text */
-}
-
 .contact-box p {
     margin: 0; /* Remove default margins */
     line-height: 1.5; /* Set desired line-height */
