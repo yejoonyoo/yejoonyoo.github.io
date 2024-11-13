@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md fixed-top custom-navbar">
+    <!-- <nav class="navbar navbar-expand-md fixed-top custom-navbar">
         <div class="container">
         <a class="navbar-brand" href="index.html">Yejoon Yoo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#publications">Publications</a>
+                    <a class="nav-link" href="#publications">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Assets/Yejoon_Yoo_CV.pdf">CV</a>
@@ -33,18 +33,18 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav> -->
 
     <!-- Home Section -->
     <section id="home" class="pt-5">
-        <div class="container mt-5">
+        <div class="container mt-4">
             <!-- Profile Section -->
             <div class="row justify-content-center">
                 <div class="col-md-4 profile-container">
                     <!-- Profile Image -->
                     <img src="Assets/yejoonyoo.png" alt="Yejoon Yoo" class="img-fluid profile-image">
                     <!-- Contact Information Box -->
-                    <div class="card contact-box">
+                    <div class="contact-box">
                         <div class="card-body">
                             <p><a href="mailto:yy937@cornell.edu"><i class="fas fa-envelope"></i> yy937@cornell.edu</a></p>
                             <p><a href="Assets/Yejoon_Yoo_CV.pdf"><i class="fas fa-file-alt"></i>  Curriculum Vitae</a></p>
@@ -53,7 +53,7 @@
                 </div>               
                 <div class="col-md-8 description-container">
                     <h2>Hi! I'm Yejoon Yoo</h2>
-                    <p>I completed my master’s in Information Science at Cornell University, and I’m currently working as a research assistant at <a href="https://virtualembodimentlab.com/">Virtual Embodiment Lab</a>, advised by <a href="https://cals.cornell.edu/andrea-stevenson-won">Andrea Stevenson Won</a>.
+                    <p>I completed my Master’s in Information Science at Cornell University, and I’m currently working as a research assistant at <a href="https://virtualembodimentlab.com/">Virtual Embodiment Lab</a>, advised by <a href="https://cals.cornell.edu/andrea-stevenson-won">Andrea Stevenson Won</a>.
                     <br><br>My research interests are in Human-Computer Interaction, with a focus on AI simulations for personalized learning. I am passionate about making learning more inclusive by fostering diversity and accessibility for all.      
                     <br><br>Previously, I worked as a UX researcher and designer at <a href="https://rippleai.co/en/">RippleAI</a> (Speech-To-Text Technology) and <a href="https://www.soft-berry.com/">Softberry</a> (Electric Vehicle Platform). 
                     </p>
@@ -63,9 +63,9 @@
     </section>
 
     <!-- Publications Section -->
-    <section id="publications" class="pt-5">
+    <section id="publications" >
         <div class="container">
-            <h2>Projects</h2>
+            <h2>Projects</h2><br>
             <!-- Publication 1 -->
             <div class="card mb-4 publication-card">
                 <div class="row no-gutters">
@@ -130,8 +130,25 @@
         </div>
     </section>
 
+    <!-- Teaching Experience Section -->
+    <section id="teaching-experience" class="pt-5">
+        <div class="container">
+            <h2>Teaching Experience</h2><br>
+
+            <p><b>Graduate Teaching Assistant</b> - Course: Human-Computer Interaction Design</p>
+            <p><i>Cornell University, Spring 2023</i></p>
+            <p>Assisted in teaching foundational principles of HCID, provided feedback on assignments, and supported students in learning user research and prototyping skills.</p><br>
+
+            <p><b>Coding Tutor</b> - Course: Core 1: Interaction</p>
+            <p><i>Parsons School of Design, Fall 2019</i></p>
+            <p>Guided students in building user-centered web projects from concept to deployment and supported them in developing prototypes using front-end development techniques.</p>
+        </div>
+    </section>
+
+
+
    <!-- Fun Section -->
-   <section id="fun" class="pt-5">
+   <!-- <section id="fun" class="pt-5">
     <div class="container">
         <h2>Fun</h2>
         <p>Here are some of my hobbies and interests!</p>
@@ -150,7 +167,6 @@
                     <img src="Assets/hobby2.JPG" class="card-img-top" alt="Hobby 2" onclick="openModal(1)">
                     <div class="card-body">
                         <h5 class="card-title"><a href="http://b.parsons.edu/~yooy619/lab/Self/page/index.html">Hand Drawings</a></h5>
-                        <!-- <p class="card-text">Description of hobby 2.</p> -->
                     </div>
                 </div>
             </div>
@@ -165,10 +181,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Modal for Slideshow -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -177,18 +193,15 @@
                 </button>
             </div>
             <div class="modal-body position-relative text-center">
-                <!-- Previous and Next buttons as overlay icons -->
                 <button type="button" class="slideshow-control prev-button" onclick="prevImage()">&#8249;</button>
                 <img id="modalImage" src="" class="img-fluid large-modal-image" alt="Expanded Hobby Image">
                 <button type="button" class="slideshow-control next-button" onclick="nextImage()">&#8250;</button>
-
-                <!-- Centered title and description below the image -->
                 <h5 class="modal-title mt-3" id="imageModalLabel"></h5>
                 <p id="modalDescription" class="mt-2 text-center"></p>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -204,21 +217,22 @@
 
 <!-- Smooth Scrolling Script -->
 <script>
-    $(document).ready(function(){
+    $(document).ready(function() {
         $('a.nav-link').on('click', function(event) {
-            if (this.hash !== "") {
+            const target = this.hash;
+            if (target) {
                 event.preventDefault();
-                var hash = this.hash;
                 $('html, body').animate({
-                    scrollTop: $(hash).offset().top - 70
-                }, 800);
+                    scrollTop: $(target).offset().top - 70
+                }, 50);
             }
         });
     });
 </script>
 
+
 <!-- Slideshow Script -->
-<script>
+<!-- <script>
     const images = [
         { src: 'Assets/hobby1.jpg', title: 'Hobby 1', description: 'Description of hobby 1.' },
         { src: 'Assets/hobby2.jpg', title: 'Hobby 2', description: 'Description of hobby 2.' },
@@ -260,6 +274,6 @@
             img.addEventListener('click', () => openModal(index));
         });
     });
-</script>
+</script> -->
 </body>
 </html>

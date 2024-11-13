@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md fixed-top custom-navbar">
+    <!-- <nav class="navbar navbar-expand-md fixed-top custom-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">Yejoon Yoo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="publication.html">Publications</a>
+                        <a class="nav-link" href="index.html#publications">Publications</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Assets/Yejoon_Yoo_CV.pdf">CV</a>
@@ -35,11 +35,12 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
+    <a href="index.html" class="back-arrow">&#8592;</a>
 
     <!-- Cover Video Section -->
     <section class="cover-video-section pt-5">
-        <div class="container mt-5 text-center">
+        <div class="container mt-4 text-center">
             <video autoplay muted loop class="cover-video">
                 <source src="Assets/practice.mov" type="video/mp4">
                 Your browser does not support the video tag.
@@ -50,18 +51,138 @@
     <!-- Publication Content Section -->
     <section class="publication-content pt-5">
         <div class="container">
-            <h2 class="mt-4">Embodying Social AI Agents for Simulating Conflict to Teach Conflict
+            <h2 class="mt-1">Embodying Social AI Agents for Simulating Conflict to Teach Conflict
                 Resolution Strategies</h2>
-            <p>This ongoing research project in collaboration with Stanford University delves into the potential of embodied AI agents in simulating conflict situations to teach conflict resolution strategies. Through embodied social AI, we aim to explore the effects of virtual interactions on emotional regulation and strategic decision-making.</p>
-            
+            <p>This ongoing research project, in collaboration with Stanford University, explores the effectiveness of embodied AI agents in conflict resolution training by simulating realistic conflict scenarios. Building on the foundational work from Rehearsal: Simulating Conflict to Teach Conflict Resolution, this study examines how AI agents that display human-like nonverbal behaviors—such as gestures and facial expressions—can enhance user engagement and improve the application of conflict resolution strategies. By comparing various interaction conditions, from text-only to fully embodied avatars, the project aims to identify how AI embodiment influences skill acquisition and user preference, ultimately advancing AI’s role in interactive skill training.</p>
+
             <h3 class="mt-5">Background</h3>
-            <p>Our research draws on principles from human-computer interaction, AI, and conflict psychology. We are particularly interested in how embodying virtual agents can impact learning outcomes in emotionally charged scenarios. The project involves designing interactive simulations where users engage with AI agents that model realistic responses to conflict, enabling practice in handling real-life situations.</p>
-            
+            <p>Effective conflict resolution skills are essential in both personal and professional domains, yet mastering these skills is challenging without practice. With advancements in AI and immersive simulation technologies, AI-driven training offers promising potential for replicable and accessible skill development environments. Embodied AI agents that mimic human nonverbal cues may particularly enhance learning by providing a sense of realistic interaction, thereby potentially improving skill acquisition compared to traditional text- or voice-only AI models. This study examines the effectiveness of AI embodiments in a simulated conflict resolution training environment, guided by the Interests-Rights-Power (IRP) framework of conflict resolution.</p>
+            <h3 class="mt-5">Research questions</h3>
+            <p>RQ1: Does embodying a social AI agent for simulating conflict improve participants’ use of conflict resolution strategies compared to text-only and voice-only AI agents?</p>
+            <p>RQ2: Which condition is most preferred by participants for learning conflict resolution strategies?</p>
+            <p>RQ3: Based on the dialogue analysis, does embodiment influence whether participants use competitive or cooperative strategies?</p>
+            <p>RQ4: Which nonverbal behavior is most preferred by participants during interaction with the AI agent: (c1) deictic gestures (e.g., thumbs up/shaking head), (c2) open/close gestures (e.g., arms open/crossed arms), or (c3) dominant/submissive gestures (e.g., akimbo/shrinking postures)?</p>
+
             <h3 class="mt-5">Methodology</h3>
-            <p>The research employs a mix of quantitative and qualitative methodologies, including surveys, structured interviews, and behavioral analytics from the simulations. Participants’ responses and strategies are analyzed to assess the efficacy of the AI-driven interactions in improving emotional regulation and conflict resolution skills.</p>
+            <h4 class="mt-5">Design</h4>
+            <div class="text-center mt-4">
+                <img src="Assets/StudyFlow.png" alt="Methodology Image" class="studyflow-img">
+            </div>
+            <p>This between-subjects pilot study explores interactions between participants and an AI agent in a simulated environment where the agent presents a problem for participants to resolve on their own laptops. Participants were randomly assigned to one of five AI-generated role-play conditions: (a) Embodied Agent with Open/Close Gestures, (b) Embodied Agent with Deictic Gestures, (c) Embodied Agent with Submissive/Dominant Gestures, (d) Text-Only, and (e) Voice-Only. Each condition utilizes IRP prompting, a method guiding a large language model’s output based on the Interests-Rights-Power (IRP) theory of conflict resolution (Shaikh et al., 2024). Each condition consists of three simulations: (1) Pre-Test, (2) Practice Simulation, and (3) Final Test. All simulations display the status: turn number, timer, cooperativeness score (1-5), instructions, and scenario (work for First Test, blender for Practice Simulation, and food for Final Test). The cooperativeness score begins at 1 and increases when participants use cooperative conflict resolution strategies (Interests, Positive Expectations, Proposal). It decreases when participants use competitive strategies (Rights, Power) and remains unchanged when they use neutral strategies (Concession, Facts). In the Practice Simulation, feedback tailored to each participant's response is displayed on-screen after each turn. This feedback includes the type of response, indicating the strategy used, along with suggestions for improving their conflict resolution skills.</p>
+            <h4 class="mt-5">Conditions</h4>
+            <p>In the Embodied Agent conditions (a, b, c), the agent is represented by an avatar with body animations and facial expressions. The agent’s responses vary according to participants’ conflict resolution strategies: positive body gestures and smiles for cooperative strategies; negative body gestures and frowns for competitive strategies; and neutral body gestures with no expression for neutral strategies. Participants in the embodied conditions (a, b, c) and the Voice-Only condition interact with the agent verbally using microphones. In the Text-Only condition, participants communicate with the agent by typing and sending messages through a chat interface.</p>
+            <p><b>(a) Embodied Agent with Open/Close Gestures Condition:</b></p>
+            <ul>
+                <li>Cooperative Strategies: Open gestures (e.g., open arms) and smiling facial expressions.</li>
+                <li>Competitive Strategies: Closed gestures (e.g., crossed arms) and frowning facial expressions.</li>
+            </ul>
+
+            <p><b>(b) Embodied Agent with Deictic Gestures Condition:</b></p>
+            <ul>
+                <li>Cooperative Strategies: Positive deictic gestures (e.g., thumbs up, nodding) and smiling facial expressions.</li>
+                <li>Competitive Strategies: Negative deictic gestures (e.g., head shake, crossed arms forming an "X") and frowning facial expressions.</li>
+            </ul>
+
+            <p><b>(c) Embodied Agent with Submissive/Dominant Gestures Condition:</b></p>
+            <ul>
+                <li>Cooperative Strategies: Submissive gestures (e.g., shrunken body) and smiling facial expressions.</li>
+                <li>Competitive Strategies: Dominant gestures (e.g., arms akimbo) and frowning facial expressions.</li>
+            </ul>
+
+            <p><b>(d) Text-Only Condition:</b></p>
+            <ul>
+                <li>The agent responds with text messages in the chat interface.</li>
+            </ul>
+
+            <p><b>(e) Voice-Only Condition:</b></p>
+            <ul>
+                <li>The agent responds with audio messages.</li>
+            </ul>
+            <h4 class="mt-5">Simulations</h4>
+                <p><b>1. Pre-Test Simulation:</b> Participants engage in up to 10 dialogue turns over 10 minutes before the practice simulation.</li>
+                <p><b>2. Practice Simulation:</b> Participants practice conflict resolution skills with the AI agent for up to 20 minutes, repeating 10-turn rounds. Feedback is displayed after each turn, including the participant’s response type and suggestions for improvement.</p>
+                <p><b>3. Final Test Simulation:</b> Similar to the Pre-Test, participants complete 10 dialogue turns within 10 minutes; however, this test occurs after the Practice Simulation.</p>
             
-            <h3 class="mt-5">Future Directions</h3>
-            <p>We envision this research as a stepping stone toward more personalized educational tools in conflict resolution training. Future studies will explore adaptive AI behaviors based on users' interaction styles, creating a more tailored learning experience. The findings could inform the development of educational AI across various domains.</p>
+            <h4 class="mt-5">Participants</h4>
+            <div class="text-center mt-4">
+                <img src="Assets/participants.png" alt="Participants Image" class="studyflow-img">
+            </div>
+            <p>Forty-three individuals from Prolific, a crowdsourcing platform, participated in the study, with each person who followed instructions receiving $25 as compensation. Eighteen participants did not fully complete the simulations, resulting in incomplete transcripts for measuring the number of cooperative strategies and turns in the practice simulation. Table 1 displays the demographics of the original, removed, and final participant groups. All participants provided informed consent, and the study procedures were approved by the Institutional Review Board (IRB).</p>
+            
+            <h4 class="mt-5">Materials</h4>
+            <p>The simulations were developed in Unity 3D using a combination of pre-existing and custom-built assets. The OpenAI Unity package (https://github.com/srcnalt/OpenAI-Unity.git) was integrated to enable direct utilization of the OpenAI API within the Unity game engine. Additionally, the Google APIs Client Library was installed to facilitate interactions with Google Cloud Storage, allowing for the saving and loading of audio files and transcripts created during the simulations.
+                The AI agent uses GPT-3.5 Turbo to generate real-time responses based on participants’ interactions and to analyze the conflict resolution strategies being used, enabling tailored responses with appropriate facial expressions and gestures. 
+            </p>
+            <p>For both Embodied and Voice-Only conditions, the pipeline for generating verbal communication is as follows:</p>
+                <div class="pipeline">
+                    <div class="pipeline-step">User Voice Input</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">Recording</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">Speech-to-Text</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">Text Input to LLM (GPT-3.5 Turbo)</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">LLM Response</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">Text-to-Speech</div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">AI Agent Voice Output</div>
+                </div>
+            <p class="mt-3">Due to the delay (2.0s) in generating and loading GPT responses, filler sound recordings such as “Umm,” “Uhh,” “I mean,” and “You know” were used during response latency to indicate that the agent was about to respond.</p>
+            <p>For the three Embodied Agent conditions, avatars were created by generating 3D models from the Chicago Face Database using Reallusion software, though only a female Latino model was used in the pilot study. The Chicago Face Database provides standardized photographs of male and female faces of varying ethnicity between the ages of 17-65 (Asian, Black, Latino, White). Animations for gestures such as open arms, crossed arms, nodding, thumbs up, head shaking, arms crossed in an "X," akimbo stance, and a shrunken posture were purchased and imported from ActorCore. An additional script animated the agent’s facial expressions and gestures in response to participants’ interactions. The "Microphone Pro - WebGL, Mobiles, Desktop" asset was purchased from the Unity Asset Store to enable microphone functionality with WebGL. "SALSA LipSync Suite" and "Amplitude for WebGL" were also purchased and installed to create lip-sync animations for the agent's audio responses in WebGL. The background was created using assets from "ArchVizPRO Interior Vol.6 URP" from the Unity Asset Store.
+            </p>
+
+            <h4 class="mt-5">Procedure</h4>
+            <p>Participants accessed the study by clicking a Qualtrics survey link on Prolific, where they reviewed the study overview and signed the consent form. They were informed about OpenAI's privacy policy regarding data collection and storage. After consenting, participants answered demographic questions and reported their familiarity with AI tools. They then completed an initial Efficacy Test to assess their preferred conflict-management style.
+            </p>
+            <p>Participants were randomly assigned to one of five conditions and completed the First Test simulation, which involved taking 10 dialogue turns within 10 minutes. In this scenario, participants role-played as a supervisor preparing to confront an employee (the agent) about a recent decline in performance and the possibility of termination. After the First Test simulation, participants watched a <a href="https://www.youtube.com/watch?v=b4jkctMu01s&t=0s">resolution training video</a> created by Omar Shaikh (Stanford) and reviewed a document outlining the strategies covered in the video.
+            </p>
+            <p>Next, participants began the Practice Simulation, where they could practice the learned strategies by completing 10-turn rounds,and repeating them as desired for up to 20 minutes. After each 10-turn round, the turn count restarted, and the simulation reset with a cooperativeness score of 1. Participants received tailored feedback after each turn regarding the types of strategies used and suggestions for improving their responses. In this simulation, participants role-played as a store complaints clerk handling a customer (the agent) who wanted to return a used blender.
+            </p>
+            <p>Following the Practice Simulation, participants completed the Final Test simulation, identical to the First Test in structure, with 10 dialogue turns over 10 minutes. However, the scenario differed; participants role-played as a partner expressing that a meal cooked by their partner (the agent) was undercooked.</p>
+            <p>After the Final Test simulation, participants completed a second efficacy test and several surveys assessing their interaction with the agent and overall experience.</p>
+        
+            <h4 class="mt-5">Measures</h4>
+            <p>To assess the causal effects of a Human-AI Simulation system for teaching conflict resolution skills, with a sample of 25 participants (5 per condition), the evaluation includes three components: (1) a comparison of the number of cooperative strategies used in the initial and final tests, (2) a conflict self-efficacy survey based on the IRP framework to evaluate participants' conflict resolution skills, and (3) additional assessments, such as a copresence scale to measure the AI agent’s responsiveness, a "sense of being together" survey to assess the realism of the simulation, and a qualitative survey for participants' overall feedback.
+            </p>
+
+            <h4 class="mt-5">Results</h4>
+            <figure class="text-center mt-4">
+                <img src="Assets/DataAnalysis/PreTest_FinalTest.png" alt="Scatter plot of Pre-Test and Final-Test scores" class="studyflow-img">
+                <figcaption class="mt-2">Figure 1: Scatter plot showing Pre-Test vs. Final-Test scores across different conditions.</figcaption>
+            </figure>
+            <p>This scatter plot visualizes the relationship between the first simulation (pre-test) and the final simulation (final-test) scores for each condition. Each data point represents a participant’s score on both the pre-test and final test, measured by the number of cooperative strategies used out of 10 turns. The conditions—Embodied Agent with Open/Close Gestures (blue), Embodied Agent with Deictic Gestures (orange), Embodied Agent with Dominant/Submissive Gestures (green), and Text-Only (purple)—show positive trends, indicating improvements in final simulation scores compared to first simulation scores. Conversely, the Voice-Only condition (red) shows a negative trend, suggesting a reduction in final test scores compared to first simulation scores. The Embodied Agent with Open/Close Gestures and Embodied Agent with Dominant/Submissive Gestures conditions demonstrate stronger positive relationships, as indicated by steeper positive slopes.</p>
+
+            <figure class="text-center mt-4">
+                <img src="Assets/DataAnalysis/Differences.png" alt="Bar graph showing differences between Pre-Test and Final-Test scores" class="studyflow-img">
+                <figcaption class="mt-2">Figure 2: Bar graph showing differences between Pre-Test and Final-Test scores across different conditions, including standard deviations.</figcaption>
+            </figure>
+            <p>Text-Only condition shows the most substantial improvement in scores on average, although this condition also has high variability, meaning not all participants experienced the same level of improvement. Embodied_Deictic and Embodied_DomSub conditions show positive trends, suggesting some improvement, but with considerable variability in results. Embodied_OpenClose and Voice-Only conditions show little to no improvement, with Embodied_OpenClose even showing a slight decrease on average.
+            </p>  
+            
+            <figure class="text-center mt-4">
+                <img src="Assets/DataAnalysis/T-test.png" alt="Table showing paired t-test results" class="studyflow-img">
+                <figcaption class="mt-2">Table 1: Table showing paired t-test results across different conditions.</figcaption>
+            </figure>
+            <p>This table presents the results of paired sample t-tests for different conflict management categories, comparing pre-test and post-test scores. Each row corresponds to a category, and the columns show the t-statistic, p-value, and mean difference between pre-test and post-test scores. There is a significant increase in ‘Yielding’ category and a significant decrease in ‘Avoiding’ category.
+            </p>
+
+            <figure class="text-center mt-4">
+                <img src="Assets/DataAnalysis/TurnNumbers.png" alt="Bar graph showing average number of turns in Practice Simulation" class="studyflow-img">
+                <figcaption class="mt-2">Figure 3: Bar graph showing average number of turns in Practice Simulation across different conditions, including standard deviations.</figcaption>
+            </figure>
+            <p>This bar chart shows the average number of turns taken by participants in the practice simulation across different conditions. Practice simulation was taken between the pre-test and the final test. Participants were able to practice as many 10-turn rounds as applying their confliction resolution skills. Embodied Agent with Open/Close Gestures has the highest average number of turns, suggesting that participants interacted more frequently in this setting. Text-Only and Voice-Only conditions have the lower average number of turns, with Voice-Only being the lowest, which might imply less engagement or interaction in these conditions.
+            </p>
+
+            <figure class="text-center mt-4"></figure>
+                <img src="Assets/DataAnalysis/ScorePredictedByTurns.png" alt="Line graph showing the score difference between Pre-Test and Final-Test predicted by the number of turns in Practice Simulation." class="studyflow-img">
+                <figcaption class="mt-2">Figure 4: Line graph showing the score difference between Pre-Test and Final-Test predicted by the number of turns in Practice Simulation across different conditions.</figcaption>
+            </figure>
+            <p>Embodied Agent with Open/Close gestures shows a strong positive trend. As the number of practice turns increases, the score difference becomes more positive, suggesting significant improvement with more practice. The Embodied Agent with Dominant/Submissive Gestures and Embodied Agent with Deictic Gestures have minimal change. Text-Only presents that more practice turns are associated with a reduction in score improvement over time. The steep upward slope within a shorter range of turns of Voice-Only condition indicates that participants in the showed substantial improvement with relatively fewer practice turns but the score difference is not relatively higher. This may not support continuous growth in performance at the same rate as these other conditions.
+            </p>
+
+
         </div>
     </section>
 

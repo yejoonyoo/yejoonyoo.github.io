@@ -47,6 +47,12 @@ nav a:hover {
     padding-bottom: 0; /* Remove any additional bottom padding */
 }
 
+.studyflow-img {
+    width: 600px;
+    margin: 0 auto; /* Center the image */
+    padding-bottom: 20px;
+}
+
 /* Profile Container */
 .profile-container {
     display: flex;
@@ -67,8 +73,8 @@ nav a:hover {
 
 /* Contact Box */
 .contact-box {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
+    /* background-color: #f8f9fa;
+    border: 1px solid #ddd; */
     height: 70px;
     width: 100%;
     max-width: 300px; /* Align width with the profile image */
@@ -158,6 +164,29 @@ html {
     margin: 0 auto; /* Centers the image if it’s smaller than the container */
     background-color: #f8f9fa;
 }
+
+.pipeline {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.pipeline-step {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 150px;
+}
+
+.pipeline-arrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 /* Responsive Gallery */
 @media (max-width: 768px) {
     #fun .col-sm-6 {
@@ -293,4 +322,31 @@ html {
     max-width: 800px; /* Sets a maximum width for larger screens */
     height: auto; /* Maintains aspect ratio */
     border-radius: 8px; /* Optional: rounds the corners of the video */
+}
+
+.back-arrow {
+    position: fixed;
+    top: 60px;
+    left: 50px;
+    font-size: 24px;
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Arrow color */
+    background-color: #f7f7f7; /* Circle background color */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.back-arrow span {
+    padding-left: 8px; /* Add padding to shift the arrow */
+}
+
+.back-arrow:hover {
+    background-color: #f0f0f0; /* Optional: Darker color on hover */
+    color: #333;
+    text-decoration: none; /* Remove underline */
 }
