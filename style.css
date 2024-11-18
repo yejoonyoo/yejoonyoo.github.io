@@ -75,25 +75,18 @@ nav a:hover {
 .contact-box {
     /* background-color: #f8f9fa;
     border: 1px solid #ddd; */
-    height: 70px;
+    height: 100px;
     width: 100%;
     max-width: 300px; /* Align width with the profile image */
-    text-align: left; /* Center text inside the box */
+    text-align: center; /* Center text inside the box */
     color: #333;
 }
 
-.contact-box a {
-    color: #333 !important; /* Override default link color */
-    text-decoration: none; /* Remove underline if desired */
-}
 .contact-box p {
     margin: 0; /* Remove default margins */
     line-height: 1.5; /* Set desired line-height */
 }
 
-.contact-box a:hover {
-    color: #555; /* Optional: slightly lighter color on hover */
-}
 
 .contact-box .card-body {
     padding: 10px;
