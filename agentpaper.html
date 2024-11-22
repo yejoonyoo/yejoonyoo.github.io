@@ -124,9 +124,9 @@
             
             <h4 class="mt-5">Materials</h4>
             <p>The simulations were developed in Unity 3D using a combination of pre-existing and custom-built assets. The OpenAI Unity package (https://github.com/srcnalt/OpenAI-Unity.git) was integrated to enable direct utilization of the OpenAI API within the Unity game engine. Additionally, the Google APIs Client Library was installed to facilitate interactions with Google Cloud Storage, allowing for the saving and loading of audio files and transcripts created during the simulations.
-                The AI agent uses GPT-3.5 Turbo to generate real-time responses based on participants’ interactions and to analyze the conflict resolution strategies being used, enabling tailored responses with appropriate facial expressions and gestures. 
+                The AI agent uses GPT-3.5 Turbo to generate real-time responses based on participants’ interactions and to analyze the conflict resolution strategies being used, enabling tailored responses with appropriate facial expressions and gestures. We also applied the "IRP Prompting" from the original paper, <i><a href = "https://dl.acm.org/doi/10.1145/3613904.3642159">Rehearsal: Simulating Conflict to Teach Conflict Resolution</a></i>, which is a prompting designed to generate conflicts that align with expert training by grounding LLM generations to conflict resolution theory. This enables the interaction between the participant and agent during the simulations. 
             </p>
-            <p>For both Embodied and Voice-Only conditions, the pipeline for generating verbal communication is as follows:</p>
+            <p>For both Embodied and Voice-Only conditions, we created a pipeline for generating verbal communication:</p>
                 <div class="pipeline">
                     <div class="pipeline-step">User Voice Input</div>
                     <div class="pipeline-arrow">→</div>
@@ -216,10 +216,10 @@
             <p>The conditions with an Embodied Agent with Open/Close gestures and Deictic gestures, as well as the Voice-Only condition, showed the highest average scores for perceived usefulness. This suggests that either the embodied nature of the agent or the voice-only interactions can independently contribute to participants' sense of learning potential, providing flexible yet effective options for future skill improvement.
             </p> -->
 
-            <!-- <h3 class="mt-5">Nov.19.2024 Update</h3>
+            <h3 class="mt-5">Nov.19.2024 Update</h3>
             <p>
-                We are currently collecting more participant data to further refine and analyze the results.
-            </p> -->
+                We are currently running the study online. 
+            </p>
 
             </div>
     </section>
