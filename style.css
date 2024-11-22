@@ -48,9 +48,12 @@ nav a:hover {
 }
 
 .studyflow-img {
-    width: 600px;
-    margin: 0 auto; /* Center the image */
-    padding-bottom: 20px;
+    width: 100%; /* Makes the image take up the full width of its container */
+    max-width: 600px; /* Ensures it doesn’t exceed its original size */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any inline-block space */
+    margin: 0 auto; /* Centers the image */
+    padding-bottom: 40px;
 }
 
 /* Profile Container */
@@ -298,6 +301,10 @@ html {
     .card-img {
         width: 100%;
         height: auto;
+    }
+
+    .studyflow-img {
+        max-width: 100%; /* Allows it to resize to smaller containers */
     }
 }
 
