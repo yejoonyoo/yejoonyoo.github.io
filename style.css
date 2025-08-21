@@ -500,3 +500,24 @@ nav a.active {
 nav a:hover {
   font-weight: 700;  
 }
+
+.video-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;   /* space between title and video */
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+  padding-left: 14px;    /* aligns with project/artwork headers */
+}
+
+.video-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: var(--accent-color-dark);
+  border-radius: 2px;
+}
