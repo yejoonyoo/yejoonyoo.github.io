@@ -32,6 +32,16 @@ a {
     color: inherit;
 }
 
+p {
+  color: var(--text-color);
+}
+
+.highlight-text {
+  color: var(--accent-color-dark);
+  font-weight: 700; /* already in your CSS; leave if you like */
+}
+
+
 img {
     display: block;
     width: 100%;
@@ -477,6 +487,8 @@ nav a[aria-current="page"]::after {
 .about-content ul {
   margin-left: 1rem;   
   padding-left: 1rem;  
+  color: var(--text-color);
+
 }
 
 #artwork .project img {
