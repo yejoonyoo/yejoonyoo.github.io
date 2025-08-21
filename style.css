@@ -128,7 +128,7 @@ nav a.active {
 #projects {
     margin-top: 3rem;       
     padding-top: 1.5rem; 
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
 }
 
 #projects h2,
@@ -153,6 +153,11 @@ nav a.active {
   background: var(--accent-color-dark);
   border-radius: 2px;         
 }
+
+#artwork p {
+  margin-bottom: 1.5rem; 
+}
+
 
 .grid {
     display: grid;
@@ -521,3 +526,61 @@ nav a:hover {
   background: var(--accent-color-dark);
   border-radius: 2px;
 }
+
+/* Make Teaching title match Projects/Art */
+#projects h2,
+#artwork h2,
+#teaching h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+  padding-left: 14px;
+}
+
+#projects h2::before,
+#artwork h2::before,
+#teaching h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: var(--accent-color-dark);
+  border-radius: 2px;
+}
+
+#teaching h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+  padding-left: 14px;
+}
+
+#teaching h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: var(--accent-color-dark);
+  border-radius: 2px;
+}
+
+#teaching p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+#teaching {
+  margin-bottom: 3rem;   /* pushes Art further down */
+}
+
