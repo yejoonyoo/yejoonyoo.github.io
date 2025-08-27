@@ -38,7 +38,7 @@ p {
 
 .highlight-text {
   color: var(--accent-color-dark);
-  font-weight: 700; /* already in your CSS; leave if you like */
+  font-weight: 700; 
 }
 
 
@@ -112,11 +112,6 @@ nav a.active {
   text-align: center;
 }
 
-
-
-
-
-/* Hero */
 #hero {
     margin-top: 0.5rem;  
     padding-top: 5rem;     
@@ -134,7 +129,6 @@ nav a.active {
     padding: 0 0.25rem;
 }
 
-/* Projects */
 #projects {
     margin-top: 3rem;       
     padding-top: 1.5rem; 
@@ -210,7 +204,7 @@ nav a.active {
     font-size: 0.9rem;
     color: var(--text-color);
 }
-/* Footer */
+
 footer {
     background: none;
     text-align: center;
@@ -372,17 +366,17 @@ nav a[aria-current="page"]::after {
 
 @media (max-width: 900px) {
   #hero.about-wrap {
-    grid-template-columns: 1fr; /* single column */
+    grid-template-columns: 1fr; 
   }
 
   .about-media {
-    order: 1; /* first */
+    order: 1; 
     max-width: 420px;
-    margin: 0 auto; /* center image block */
+    margin: 0 auto; 
   }
 
   .about-content {
-    order: 2; /* second, under about-media */
+    order: 2; 
     margin-top: 1.5rem;
   }
 }
@@ -529,11 +523,11 @@ nav a:hover {
 
 .video-title {
   font-size: 1.2rem;
-  margin-bottom: 1rem;   /* space between title and video */
+  margin-bottom: 1rem;   
   font-weight: 500;
   position: relative;
   text-align: left;
-  padding-left: 14px;    /* aligns with project/artwork headers */
+  padding-left: 14px;   
 }
 
 .video-title::before {
@@ -548,7 +542,6 @@ nav a:hover {
   border-radius: 2px;
 }
 
-/* Make Teaching title match Projects/Art */
 #projects h2,
 #artwork h2,
 #teaching h2 {
@@ -602,6 +595,6 @@ nav a:hover {
 }
 
 #teaching {
-  margin-bottom: 3rem;   /* pushes Art further down */
+  margin-bottom: 3rem;  
 }
 
