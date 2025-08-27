@@ -264,9 +264,9 @@ footer {
 
 #hero.about-wrap {
   display: grid;
-  grid-template-columns: 260px 1fr; 
+  grid-template-columns: 260px 1fr;
   gap: 2rem;
-  align-items: start; 
+  align-items: start;
   margin-top: 2rem;
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -371,13 +371,22 @@ nav a[aria-current="page"]::after {
 }
 
 @media (max-width: 900px) {
-  .about-wrap {
-    grid-template-columns: 1fr;
+  #hero.about-wrap {
+    grid-template-columns: 1fr; /* single column */
   }
+
   .about-media {
+    order: 1; /* first */
     max-width: 420px;
+    margin: 0 auto; /* center image block */
+  }
+
+  .about-content {
+    order: 2; /* second, under about-media */
+    margin-top: 1.5rem;
   }
 }
+
 
 @media (max-width: 768px) {
     #hero h1 {
